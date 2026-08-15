@@ -1,6 +1,6 @@
 import pandas as pd
 
-# NO1
+# data-clean-func
 def load_and_clean_data(file_path: str):
     # 数据清洗（重复，缺失，格式调整）
     data = pd.read_csv('../data/data_wuliu.csv', encoding='gbk')
