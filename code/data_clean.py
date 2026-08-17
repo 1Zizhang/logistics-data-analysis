@@ -4,7 +4,7 @@ import pandas as pd
 # data-clean-func
 def load_and_clean_data(file_path: str):
     # 数据清洗（重复，缺失，格式调整）
-    data = pd.read_csv('../data/data_wuliu.csv', encoding='gbk')
+    data = pd.read_csv('data/data_wuliu.csv', encoding='gbk')
     # 通过info函数可以看出有的列数据有缺失(订单号,货品交货状况,数量)，订单行删除，销售额列格式不对，需要调整转换
     # 删除重复记录
     data.drop_duplicates(keep='first', inplace=True)  # 遇到重复保留第一行，并修改数据
