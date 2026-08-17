@@ -27,19 +27,13 @@
 
 **通过按时交货率看，Q4季度比Q3季度低，猜测可能由于季节更替原因（气候原因导致）**
 
-![image-20260817192044332](G:\C-CodeBases\logistics-data-analysis\images\image-20260817192044332.png)
-
 #### 4.1.2.销售区域维度分析
 
 **西北地区存在明显的延时交货情况，需要进行解决！**
 
-![image-20260817192308356](G:\C-CodeBases\logistics-data-analysis\images\image-20260817192308356.png)
-
 #### 4.1.3.货品维度分析
 
 **货品4晚交货情况较为严重，其余货品按时交货率相对正常**
-
-![image-20260817192426729](G:\C-CodeBases\logistics-data-analysis\images\image-20260817192426729.png)
 
 #### 4.1.4.货品+销售区域维度分析
 
@@ -47,8 +41,4 @@
 
 **货品：：货品2主要运往华东和马来西亚，主要为马来西亚晚交货导致！**
 
-![image-20260817192723622](G:\C-CodeBases\logistics-data-analysis\images\image-20260817192723622.png)
-
 ## 4.2.是否存在尚有潜力的销售区域
-
-![]()
