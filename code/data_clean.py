@@ -1,5 +1,6 @@
 import pandas as pd
 
+
 # data-clean-func
 def load_and_clean_data(file_path: str):
     # 数据清洗（重复，缺失，格式调整）
@@ -25,4 +26,11 @@ def load_and_clean_data(file_path: str):
         return number_new
 
     data['销售金额'] = data['销售金额'].map(data_deal)
+    # 异常值处理
+    # 1.销售金额为0，数量为1直接删除掉
+    # 2.数量/销售金额标准值是均值的8倍之多，且二分之一分位数也为1，说明数据严重右偏(2/8法则)->属于正常现象无须处理
+    data = data[data['销售金额'] != 0]
+    # 月份预处理
+    data['销售时间'] = pd.to_datetime(data['销售时间'])
+    data['月份'] = data['销售时间'].apply(lambda x: x.month)
     return data
